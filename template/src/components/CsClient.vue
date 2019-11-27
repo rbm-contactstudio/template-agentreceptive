@@ -20,10 +20,9 @@
 <script>
   import { mapActions, mapGetters } from 'vuex';
   import {
-    CsFacilities, CsCardSale, CsManifestation, CsClassification, CsEmail
+    CsFacilities, CsTabulation, CsCardSale, CsManifestation, CsClassification, CsEmail
   } from '@contactstudio/agent-tools';
   import CsContactData from './CsContactData.vue';
-  import CsTabulation from './CsTabulation.vue';
 
   export default {
     components: {
@@ -42,7 +41,9 @@
           {label: 'Telefone', typeField: 'TEXTO', model: 'TELEFONE', valid: true, required: false, options: {placeholder: ''}, errorField: 'Telefone inválido.', classe: 'form-group'},
           {label: 'Email', typeField: 'TEXTO', model: 'EMAIL', valid: true, required: false, options: {placeholder: '', size: 4}, errorField: 'Telefone inválido.', classe: 'form-group'},
           {label: 'CPF', typeField: 'TEXTO', model: 'CPF', valid: true, required: false, options: {placeholder: '', size: 4}, errorField: 'Telefone inválido.', classe: 'form-group'},
-          {label: 'UF', typeField: 'TEXTO', model: 'ESTADO', valid: true, required: false, options: {placeholder: '', size: 4}, errorField: 'Telefone inválido.', classe: 'form-group'}
+          {label: 'UF', typeField: 'TEXTO', model: 'ESTADO', valid: true, required: false, options: {placeholder: '', size: 4}, errorField: 'Telefone inválido.', classe: 'form-group'},
+          {label: 'CIDADE', typeField: 'TEXTO', model: 'CIDADE', valid: true, required: false, options: {placeholder: '', size: 4}, errorField: 'Telefone inválido.', classe: 'form-group'},
+          {label: 'BAIRRO', typeField: 'TEXTO', model: 'BAIRRO', valid: true, required: false, options: {placeholder: '', size: 4}, errorField: 'Telefone inválido.', classe: 'form-group'}
         ],
         updatedContact: false,
       }
